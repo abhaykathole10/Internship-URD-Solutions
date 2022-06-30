@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    
+  </head>
+  <body style="font-family:Trebuchet MS" class="background-details">
+   
+    <!-- Simulate a smartphone / tablet -->
+        <div class="hamburger-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="hamnav">
+      <a href="index.html" class="hamactive" style="font-size:40px">Chicago Conference</a>
+      <div id="hamLinks">
+        <a href="index.html" class="hamedits">Home</a>
+        <a href="speakers.html" class="hamedits">Speakers</a>
+        <a href="schedule.html" class="hamedits">Schedule</a>
+        <a href="venue.html" class="hamedits">Venue</a>
+      </div>
+      <a href="javascript:void(0);" class="hamicon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <!-- End smartphone / tablet look -->
+    </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("hamLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    
+    <div class="before-reg">
+          <h1 style="color:white">Registration</h1>
+          <h2>Every year we aim to have an unbelievable time, and this year we'd love it for you to join us. Conference passes only cost $99, one of the best values you'll find.</h2>
+        </div>
+        
+        <div class="down">          
+          <p>First name <br><input type="text" placeholder="First name" class="inside-box"></p>
+          <p>Last name  <br><input type="text" placeholder="Last name" class="inside-box"></p>
+          <p>Email id   <br><input type="text" placeholder="xyz@viit.ac.in" class="inside-box"></p>
+          <p>Mobile no  <br><input type="text" placeholder="**********" class="inside-box"></p>
+          <p>Number of Passes
+              <br><select class="inside-box" style="cursor:pointer;width:15%">
+                <option>1 </option>
+                <option>2 </option>
+                <option>3 </option>
+                <option>4 </option>
+                <option>5 </option>
+              </select>              
+          </p> 
+          <p><input type="submit" value="Purchase" class="purchase"></p>
+        </div>
+
+    <footer> 
+      <nav class="nav">
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="speakers.html">Speakers</a></li>
+         <li><a href="schedule.html">Schedule</a></li>
+         <li><a href="venue.html">Venue</a></li>
+         <li><a href="registration.html">Register</a></li>
+       </ul>
+      </nav>    
+      <small class="text">&#169;2021 ChicagoConference. All Rights Reserved.</small>      
+    </footer>
+
+  </body>
+</html>

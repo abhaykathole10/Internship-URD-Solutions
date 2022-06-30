@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Venue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body class="background-details">
+  
+    <!-- Simulate a smartphone / tablet -->
+        <div class="hamburger-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="hamnav">
+      <a href="index.html" class="hamactive" style="font-size:40px">Chicago Conference</a>
+      <div id="hamLinks">
+        <a href="index.html" class="hamedits">Home</a>
+        <a href="speakers.html" class="hamedits">Speakers</a>
+        <a href="schedule.html" class="hamedits">Schedule</a>
+        <a href="registration.html" class="hamedits">Register</a>
+      </div>
+      <a href="javascript:void(0);" class="hamicon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <!-- End smartphone / tablet look -->
+    </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("hamLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    
+    <div class="before-reg">
+      <h1 style="color:white">Venue</h1>
+      <h2>The conference is held at The Chicago Theatre, a beautiful historical landmark. The conference hotel,
+      Four Seasons, is a short walk away down State Street.</h2>
+    </div>
+    
+    <div class="venue-box">
+      
+      <div class="venue-content">
+        <h1>The Chicago Theatre</h1>
+        <h3>175 N State St, Chicago, IL 60601</h3>
+        <h3>thechicagotheatre.com<br>(312) 462-6300</h3>
+        <div style="text-align:center">
+          <image class="images" src="images/chicago_1.jpeg"></image>
+          <image class="images" src="images/chicago_3.jpeg"></image>
+          <image class="images" src="images/chicago_2.jpeg"></image> 
+          <image class="images" src="images/chicago_7.jpeg"></image> 
+        </div>            
+      </div> 
+      
+      <div>
+       <iframe class="venue-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.3471181070527!2d-87.62969368481286!3d41.88539137922164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2sThe%20Chicago%20Theatre!5e0!3m2!1sen!2sin!4v1615920272842!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
+      </div>
+      <div class="venue-content">
+      </div>
+    </div>
+    
+    <footer> 
+      <nav class="nav">
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="speakers.html">Speakers</a></li>
+         <li><a href="schedule.html">Schedule</a></li>
+         <li><a href="venue.html">Venue</a></li>
+         <li><a href="registration.html">Register</a>
+       </ul>
+      </nav>    
+      <small class="text">&#169;2021 ChicagoConference. All Rights Reserved.</small>      
+    </footer>
+  
+  </body>
+
+
+</html>
